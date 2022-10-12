@@ -6,7 +6,7 @@ if [ -z "$command" ]; then
   exit
 fi
 if [ "$command" == "start" ]; then
-  bash ./manage_my_process &
+# bash ./manage_my_process &
   echo "$!" > /var/run/my_process.pid
   echo "manage_my_process started"
 elif [ "$command" == "stop" ]; then
